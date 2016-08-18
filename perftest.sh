@@ -6,5 +6,6 @@ ELAPSED_TIME=$(($SECONDS - $START_TIME))
 echo $ELAPSED_TIME
 if 
 [ "$ELAPSED_TIME" -gt "10" ]; then
+    echo "!!!!! PERFORMANCE TEST FAILED !!!!!"
     exit 1
 fi
